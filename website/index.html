@@ -20,13 +20,30 @@
 }
 
 #content {
-	margin-left:10%;
-	margin-top: 10%;
-	color: 	white;
-	font-size: 35px;
-	width: 80%;
 	
+	margin-left:5%;
+	margin-top: 10%;
+	border:2px;
+	font-size: 35px;
+	width: 1175px;	
+	box-sizing: border-box;
 }
+ 
+ @keyframes first4words{
+  from {background-color: red;
+  		transform: translateX(99%);
+  		transform: trans; }
+  to {background-color: #80ced6;
+  		transform: translateX(2%); }
+		}
+p{color: black;	
+  animation-name:first4words  ;
+  animation-duration: 8s ; 
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+
+ 
+ }
 </style>
 <body >
 	<div class="cover">
@@ -38,12 +55,12 @@
 				<li><a href="Home.html">Home</a></li>
 				<li><a href="Service.html">Service</a></li>
 				<li><a href="Gallery.html">Gallery</a></li>
-				<li><a href="About.html">About</a></li>
+				<li><a href="About.html">About Me</a></li>
 				<li><a href="Contact.html">Contact</a></li>
 			</ul>
 			<div id="box"> Tam Nguyen's Website</div>	 
 			</div> 
-		<h1 id="content">Welcome to my Webpage. Pleas navigate through tabs above!</h1>		
+		<div id="content"> <p> Welcome to my Webpage. Please navigate through the tabs above!</p></div>		
 	</div>
 
 
