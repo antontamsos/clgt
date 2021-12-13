@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<Title>Gallery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style >
+
+*{	
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+
+.fullscreen {background-image: url(../Gallery_colorful.jpg);
+		width: 100%;
+		position: absolute;
+		height: 100vh;	
+		background-size:cover;
+		background-position:center;
+}
+	
+.row { margin-top:5%;
+		width: 100%;
+		clear: right;
+
+}
+.row2 { 
+	
+	width: 100%;
+
+}
+#container1 { float: left;	
+	width: 33.33%;}
+
+
+#box {
+	background-color: #80ced6;
+	border: 5px solid black ;
+	padding: 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#box2{
+	background-color: #80ced6;
+	border: 5px solid black ;
+	position:relative;
+	left: 45%;
+	padding: 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+#box:hover, #box2:hover {
+
+	background-color: #265ada;
+	}
+
+#box.active, #box2.active {
+	background-color: white;
+	color: #000;
+	}
+
+img{
+	height: 200px;
+	width: 100%;
+}
+
+</style>
+</head>
+
+
+<body>
+		<div class="fullscreen">
+			<div class="row" id="container1"> 
+					<div id ="box">
+						<a href="Home.jpg"> <img src="Home.jpg" > Picture 1: </img >
+							</div>	</div> </a>		
+
+			<div class="row" id="container1"> 
+					<div id ="box">
+						<a href="about.jpg"> <img src="about.jpg"  > Picture 2:</img>
+            				</div>	</div>	</a>
+			<div class="row" id="container1"> 
+					<div id ="box">
+						<a href="servicedog.jpg"> <img src="servicedog.jpg"> Picture 3:</img>
+							</div>	</div> </a>
+			<div class="row2" id="container1"> 
+					<div id ="box2">
+						<a href="Gallery_colorful.jpg"> <img src="Gallery_colorful.jpg">Picture 4:</img>
+							</div>	</div>	 </a> 
+			<div class="row2" id="container1"> 
+					<div id ="box2">
+						<a href="cover.jpg"> <img src="cover.jpg"> Picture 5:</img>
+							</div>	</div> </a>
+						    	
+		</div>
+	
+</body>
+</html>
